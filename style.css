@@ -1,0 +1,131 @@
+.logo {
+    width: 100px
+}
+html {
+    scroll-behavior: smooth;
+}
+.nav-link {
+    font-size: 1.3rem;
+}
+#slider {
+    overflow: hidden;
+}
+figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 15s slider infinite;
+}
+figure img {
+    width: 20%;
+    float: left;
+}
+.d1 {
+    border: 10px solid red;
+    background-color: rgb(236, 223, 107);
+}
+.d1 img {
+    border: 3px solid yellow;
+    padding: 2px
+}
+.d1::after, footer::after, .k::after, .mc::after, .cdm-intro::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+p {
+    font-size: 1.3rem
+}
+.bigT {
+    font-size: 1.7rem;
+}
+.he1, .cdm-intro h2 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+.backtotop {
+    color: white;
+    opacity: 80%;
+    text-decoration: none;
+    font-size: 1.7rem
+}
+.backtotop:hover {
+    color: white;
+    opacity: 100%;
+    text-decoration: none;
+}
+input {
+    border: none;
+    font-size: 1.2rem;
+    padding: 3px;
+    border-radius: 5px;
+    margin-block: 0.5%;
+}
+.tcps, .tls {
+    width: 15%
+}
+.twt-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.news {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+.v-hidden {
+    visibility: hidden;
+    position: absolute;
+    text-align: center;
+    padding-top: 5%;
+    color: white;
+    width: 90%;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    background-color: hsla(180, 78%, 23%, 0.5);
+}
+.news:hover .v-hidden {
+    visibility: visible;
+    transition: 0.5s;
+    height: 100%;
+    top: 0;
+}
+.cdm-intro {
+    background: rgb(233, 233, 175);
+    border: 5px solid yellow;
+}
+.cdm-intro img {
+    border: 3px red solid;
+}
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%
+    }
+}

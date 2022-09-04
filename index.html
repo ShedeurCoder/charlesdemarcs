@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a href="/" class="navbar-brand"><img src="images/logo.png" alt="TCP" class="logo"></a>
+            <button class="navbar-toggler" type='button' data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto ml-2">
+                    <li class="nav-item">
+                        <a href="/" class="nav-link active">Home</a>
+                    </li>
+                    <div class="dropdown">
+                        <a class="dropdown-toggle nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="statesDropdown">
+                            About TCP
+                        </a>
+                          <div class="dropdown-menu bg-secondary" aria-labelledby="statesDropdown">
+                              <a href="stand" class="dropdown-item">What we stand for</a>
+                              <a href="history" class="dropdown-item">Our history</a>
+                          </div>
+                    </div>
+                    <li class="nav-item">
+                        <a href="campaign" class="nav-link">Our campaign</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div id="slider">
+        <figure>
+            <img src="images/shake.jpg" alt="Charles de Marcs and Louis Lénine shaking hands">
+            <img src="images/salute.jpg" alt="Charles de Marcs and Louis Lénine saluting to the flag">
+            <img src="images/wave.jpg" alt="Charles de Marcs and Louis Lénine waving in front of the flag">
+            <img src="images/speech.jpg" alt="Charles de Marcs making a speech">
+            <img src="images/shake.jpg" alt="Charles de Marcs and Louis Lénine shaking hands">
+        </figure>
+        </a>
+    </div>
+
+    <main>
+        <div class="p-2 m-2 d1 text-center">
+            <img src="images/demarcs1.jpg" alt="Charles de Marcs" class="w-25 float-left">
+            <div class="p-1">
+                <h1 class="he1">We need your help</h1>
+                <p>Polls are saying that de Marcs - Lénine will only get 15% of the popular vote for Toyland. Polls also predict that only 2 seats will be given to the Toyland Communist Party in the House of Representatives.</p>
+                <p>We need your help so we can raise that number, and bring in a Communist Toyland. <b class="bigT">Spread the word</b> of our party, and don't forget to <b class="bigT">vote red</b> on election day. We can only bring upon a great Toyland with <b class="bigT">your help</b></p>
+                <p><b class="bigT">Vote TCP</b> to <b class="bigT">help us win</b> and bring upon a <b class="bigT">better Toyland</b>.<br>
+                <b>- Charles de Marcs</b>, Toyland Communist Party leader</p>
+            </div>
+        </div>
+        <div class="text-center p-2">
+            <h1>We are the <b style="color: red">Toyland Communist Party</b></h1>
+            <p style="font-size: 1.5rem">We are aiming for an equal and free future, where people can all be of the same social class, with no corruption nor elitism.</p>
+            <div class="container text-center py-5">
+                <div class='row'>
+                    <div class="col-md-4">
+                        <h2>What we stand for</h2>
+                        <p><b>We stand for Communism</b>. We stand for equality under a Communist government, who ensures right, liberty, and equality. We stand for one social class. We stand for no one to be above an individual based on their wealth or title. We believe in a free and fair world.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h2>Us in action</h2>
+                        <p>We have lead Communist revolutions all around Toyland. In every single one of those places, the people reported being happier and more content. The revolutions worked, and continued our progress. Now, we will win the presidency and bring us towards what these towns have accomplished.</p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <h2>Join the party</h2>
+                        <p>Join the party and stand for freedom. Joining is morally right. If you join, you will feel happy that you chose the right path in history all your life. If you text 1800-TCPJOIN, you will get a free TCP shirt signed by Charles de Marcs.</p>
+                    </div>
+                </div>
+            </div>        
+        </div>
+    </main>
+
+    <footer class="p-4 bg-dark text-light">
+        <h3>Join our newsletter</h3>
+        <form onsubmit="eh(); return false">
+            <input type="text" placeholder="Name" required id="na">
+            <input type="email" placeholder="Email" required id="em">
+            <button type="submit" class="btn btn-primary">Sign up</button>
+        </form>
+        <p class="float-right"><a class="backtotop" href='#'>
+            <span class="sr-only">Back to top</span>
+            <span class="fa fa-arrow-up"></span>
+        </a>
+        </p>
+        <small>You will get 1 email per week. You may not unsubscribe at any time</small>
+        <br>
+        <br>
+        <p>All images on this site are owned by the Toyland Communist Party. Do not use.</p>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>
